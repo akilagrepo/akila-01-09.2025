@@ -1,1 +1,9 @@
+name: Hello World
 
+on: [push]   # Trigger: runs whenever you push code
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "👋 Hello from GitHub Actions"
